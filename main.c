@@ -45,7 +45,7 @@ int main(){
 
 	// 데몬 작업
 	fd = open("/opt/log/time.log", O_WRONLY | O_CREAT, 0644);
-	a_time = time(NULL);
+	a_time = 0;
 
 	while(1){
 		b_time = time(NULL);
